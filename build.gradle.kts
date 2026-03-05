@@ -72,7 +72,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Builtlab/jetpack-compose-theme")
+            url = uri("https://maven.pkg.github.com/Builtlab/Jetpack-Compose-Theme")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "YOUR_GITHUB_USERNAME"
                 password = System.getenv("GITHUB_TOKEN") ?: "YOUR_PERSONAL_ACCESS_TOKEN"
