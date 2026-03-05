@@ -1,6 +1,8 @@
 name: Publish Theme Library
 
 on:
+  push: 
+    branches: [ "hotfix/**" ]
   release:
     types: [published]
 
@@ -21,7 +23,6 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        working-directory: android
 
       - name: Publish with Gradle
         run: ./gradlew :theme:publishReleasePublicationToGitHubPackagesRepository
